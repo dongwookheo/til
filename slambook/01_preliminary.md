@@ -1,4 +1,4 @@
-# Preliminary knowledge
+# Preliminary Knowledge
 
 ## 1.1 SLAM 소개
 - SLAM(Simultaneous Localization and Mapping) : 동시적 위치추정과 지도작성

@@ -37,13 +37,13 @@
 
 - `0xRRGGBB` 형식에서는 각 색상이 1 byte씩 들어 있음
 - `& mask`로 원하는 byte만 남기고, `>>`로 오른쪽 끝으로 정렬
+  ```cpp
+  unsigned int color = 0xDAA520;
+  ```
 
-```cpp
-unsigned int color = 0xDAA520;
-```
 - RGB/BGR/RGBA/ARGB 순서는 포맷 약속이므로 반드시 확인
-
-unsigned char red   = static_cast<unsigned char>((color & 0xFF0000) >> 16);
-unsigned char green = static_cast<unsigned char>((color & 0x00FF00) >> 8);
-unsigned char blue  = static_cast<unsigned char>( color & 0x0000FF);
-```
+  ```cpp
+  unsigned char red   = static_cast<unsigned char>((color & 0xFF0000) >> 16);
+  unsigned char green = static_cast<unsigned char>((color & 0x00FF00) >> 8);
+  unsigned char blue  = static_cast<unsigned char>( color & 0x0000FF);
+  ```

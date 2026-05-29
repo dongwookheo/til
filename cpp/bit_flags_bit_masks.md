@@ -2,13 +2,12 @@
 
 - 각 bit를 하나의 on/off flag처럼 사용
 - `1 << n`으로 n번째 bit에 해당하는 mask를 만든다
-
-```cpp
-constexpr unsigned char opt0 = 1 << 0; // 0000'0001
-constexpr unsigned char opt1 = 1 << 1; // 0000'0010
-constexpr unsigned char opt2 = 1 << 2; // 0000'0100
-constexpr unsigned char opt3 = 1 << 3; // 0000'1000
-```
+  ```cpp
+  constexpr unsigned char opt0 = 1 << 0; // 0000'0001
+  constexpr unsigned char opt1 = 1 << 1; // 0000'0010
+  constexpr unsigned char opt2 = 1 << 2; // 0000'0100
+  constexpr unsigned char opt3 = 1 << 3; // 0000'1000
+  ```
 
 - bit 켜기: `|= mask`
   ```cpp
